@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bob's Auto Parts</title>
+</head>
+<body>
+    
+    <form action="orderoutput.php" method="post">
+        <table style="border: 0px; margin-left: 490px; margin-top: 90px;">
+            <tr style="background: #cccccc;">
+                <td style="width: 150px; height: 70px; text-align: center; font-size: 40px;"><b>Item</b></td>
+                <td style="width: 15px;  height: 70px; text-align: center; font-size: 40px;"><b>Quantity</b></td>
+            </tr>
+
+            <tr>
+                <td>Tires</td>
+                <td><input type="text" name="tireqty" size="3" maxlength="3" /> </td>
+                
+            </tr>
+             <tr>
+                <td>Oil</td>
+                <td><input type="text" name="oilqty" size="3" maxlength="3" /> </td>
+               
+            </tr>
+             <tr>
+                <td>Sparkplug</td>
+                <td><input type="text" name="sparkqty" size="3" maxlength="3" /> </td>
+              
+                
+            </tr>
+
+           
+            <switch>
+                    <tr>
+                        <td>How did you notice Bob's Hardware?</td>
+                        <td><select name="find">
+                        <option value = "a">I’m a regular customer</option>
+                        <option value = "b">TV advertising</option>
+                        <option value = "c">Phone directory</option>
+                        <option value = "d">Word of mouth</option>
+                        </select>
+                        </td>
+                       </tr>
+                </switch> 
+                         
+                    
+                <tr><td>Shipping:</td></tr>
+                <switch>
+                        <tr>
+                            <td>How Many kilometers?</td>
+                            <td><select name="distance">
+                            <option value = "50">50</option>
+                            <option value = "100">100</option>
+                            <option value = "150">150</option>
+                            <option value = "200">200</option>
+                            <option value = "250">250</option>
+                            <option value = "300">300</option>
+                            </select>
+                            
+                           </tr>
+                    </switch> 
+                            <td colspan="2" style="text-align: center;"> <input type="submit" value="submit Order"/> </td>
+                        </tr> 
+        </table>
+       
+    </form>
+
+
+</body>
+</html>
